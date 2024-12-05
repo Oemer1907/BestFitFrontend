@@ -30,7 +30,7 @@ public class MainLayout extends AppLayout {
     }
 
     private Div createHeader() {
-        // Header ana kapsayıcı
+        // Header Hauptcontainer
         Div header = new Div();
         header.addClassName("header");
 
@@ -52,7 +52,7 @@ public class MainLayout extends AppLayout {
         headerLayout.setAlignItems(FlexComponent.Alignment.CENTER);
         headerLayout.setJustifyContentMode(FlexComponent.JustifyContentMode.BETWEEN); 
         headerLayout.setWidthFull();
-        headerLayout.addClassName("header-layout"); // Ek CSS için sınıf
+        headerLayout.addClassName("header-layout"); // Zusätzliche Klasse für CSS
 
         header.add(headerLayout);
         return header;
