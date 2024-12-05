@@ -20,10 +20,10 @@ public class EmployeeProfileView extends VerticalLayout {
         setSpacing(true);
         setAlignItems(Alignment.CENTER);
 
-        // Başlık
+        // Titel
         H2 header = new H2("Employee Profile");
 
-        // Form Alanları
+        // Formularfelder
         TextField firstName = new TextField("First Name");
         firstName.setPlaceholder("Enter your first name");
 
@@ -48,16 +48,16 @@ public class EmployeeProfileView extends VerticalLayout {
         TextField address = new TextField("Address");
         address.setPlaceholder("Enter your address");
 
-        // Parola Alanı
+        // Kennwort Bereich
         PasswordField password = new PasswordField("New Password");
         password.setPlaceholder("Enter a new password (if you want to change)");
 
-        // Güncelle Butonu
+        // Aktualisieren-Button
         Button updateButton = new Button("Update Profile");
         updateButton.getStyle().set("background-color", "#007BFF");
         updateButton.getStyle().set("color", "white");
 
-        // İki sütunlu satır düzeni
+        // Zweispaltiges Zeilenlayout
         HorizontalLayout row1 = new HorizontalLayout(firstName, lastName);
         row1.setWidthFull();
         row1.setJustifyContentMode(FlexLayout.JustifyContentMode.BETWEEN);
@@ -74,7 +74,7 @@ public class EmployeeProfileView extends VerticalLayout {
         row4.setWidthFull();
         row4.setJustifyContentMode(FlexLayout.JustifyContentMode.BETWEEN);
 
-        // Form düzeni
+        // Formularlayout
         VerticalLayout formLayout = new VerticalLayout(
             header,
             row1,
