@@ -17,7 +17,7 @@ public class AdminLayout extends AppLayout {
     private boolean isDrawerOpen = false;
 
     public AdminLayout() {
-        // CSS ve JS Dosyalarını Dahil Et
+        // CSS- und JS-Dateien einbinden
         UI.getCurrent().getPage().addStyleSheet("/css/bootstrap.min.css");
         UI.getCurrent().getPage().addStyleSheet("/css/style.css");
         UI.getCurrent().getPage().addJavaScript("/js/main.js");
@@ -26,7 +26,7 @@ public class AdminLayout extends AppLayout {
         Div header = createHeader();
         addToNavbar(header);
 
-        // Drawer (Yan Menü)
+        // Drawer (Seitenmenü)
         Div drawer = createDrawer();
         addToDrawer(drawer);
     }
@@ -45,7 +45,7 @@ public class AdminLayout extends AppLayout {
         Button logoutButton = new Button("Logout");
         logoutButton.addClassName("logout-button");
         logoutButton.addClickListener(event -> UI.getCurrent().navigate("login"));
-        logoutButton.getStyle().set("background-color", "#FF0000"); // Kırmızı arka plan
+        logoutButton.getStyle().set("background-color", "#FF0000"); // Roter Hintergrund
         logoutButton.getStyle().set("color", "white");
 
         HorizontalLayout headerLayout = new HorizontalLayout(hamburgerMenuButton, logo, logoutButton);

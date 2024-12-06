@@ -42,7 +42,7 @@ public class EmployeeLayout extends AppLayout {
         Button profileButton = new Button("Profile");
         profileButton.addClassName("profile-button");
         profileButton.addClickListener(event -> UI.getCurrent().navigate("employee/profile"));
-        profileButton.getStyle().set("background-color", "#00FF00"); // Yeşil arka plan
+        profileButton.getStyle().set("background-color", "#00FF00"); // Grüner Hintergrund
         profileButton.getStyle().set("color", "white");
 
         HorizontalLayout headerLayout = new HorizontalLayout(hamburgerMenuButton, logo, profileButton);

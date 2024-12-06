@@ -27,7 +27,7 @@ public class MemberListView extends VerticalLayout {
         setSpacing(true);
         setPadding(true);
 
-        // Başlık ve "Add Member" Butonu
+        // Titel und "Mitglied hinzufügen"-Button
         Button addMemberButton = new Button("Add Member", event -> openAddMemberDialog());
         addMemberButton.getStyle().set("background-color", "#28a745");
         addMemberButton.getStyle().set("color", "white");
@@ -41,10 +41,10 @@ public class MemberListView extends VerticalLayout {
         memberGrid.addColumn(Member::getLastName).setHeader("Last Name");
         memberGrid.addColumn(Member::getEmail).setHeader("Email");
         memberGrid.addColumn(Member::getPhone).setHeader("Phone");
-        memberGrid.addColumn(Member::getMembershipType).setHeader("Membership Type"); // Üyelik Tipi
+        memberGrid.addColumn(Member::getMembershipType).setHeader("Membership Type"); // Mitgliedschaftstyp
         memberGrid.addComponentColumn(member -> createActions(member)).setHeader("Actions");
 
-        // Örnek Üyeler
+        // Beispielmitglieder
         members.add(new Member("John", "Doe", "john.doe@example.com", "123456789", "Premium"));
         members.add(new Member("Jane", "Smith", "jane.smith@example.com", "987654321", "Standard"));
         memberGrid.setItems(members);
@@ -147,7 +147,7 @@ public class MemberListView extends VerticalLayout {
         dialog.open();
     }
 
-    // Üye Modeli
+    // Mitgliedsmodell
     public static class Member {
         private String firstName;
         private String lastName;
