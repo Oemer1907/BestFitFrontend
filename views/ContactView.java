@@ -1,6 +1,6 @@
 package com.bestfit.demo.views;
 
-//Bilgesu
+//Author: Bilgesu Kara
 
 import com.vaadin.flow.component.html.Div;
 import com.vaadin.flow.component.html.H2;
