@@ -1,5 +1,7 @@
 package com.bestfit.demo.views;
 
+//Bilgesu
+
 import com.vaadin.flow.component.html.Div;
 import com.vaadin.flow.component.html.H2;
 import com.vaadin.flow.component.html.Image;
